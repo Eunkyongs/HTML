@@ -1,0 +1,44 @@
+<html>
+<header>
+<meta charset="UTF-8"><!-- 언어세팅 소문자도 됨 -->
+<title>HTML1.0 1일차 기본태그 배우기</title>
+</header>
+<body>
+<!-- img태그 : 이미지를 가져올 때 사용합니다.  
+[속성]
+src(경로 URL)
+width(가로크기), height(세로크기)
+-->
+<img src="https://t1.daumcdn.net/cfile/tistory/24283C3858F778CA2E">
+<br>
+<img src="./ee.jpg" width="100" height="100"><br><br>
+<!-- 
+절대경로 : http, https로 시작하여 적용하는 URL주소
+상대경로 : ./ ../를 이용하여 디렉토리별로 경로주소를 설정함
+ -->
+<a href ="http://www.naver.com">네이버</a>
+<!-- a태그 : 페이지 이동 
+href(속성) : 경로
+-->
+<br>
+<a href="./index1.html">이전페이지</a>
+<br><br>
+<font color="red"><a href="http://nate.com">네이트닷컴</a></font>
+<a href="http://nate.com"><font color="red">네이트닷컴</font></a>
+<!--a 태그 사용시 a태그 안에 하위태그를 적용해야 합니다.
+상위태그인 a태그가 font태그 밖으로 가야 색상 적용됨. 
+target(속성) : 웹페이지 이동을 어떤 형식으로 할 것인지 정함
+_self : 현재 오픈된 페이지에서 이동
+_blank : 새로운 탭에서 페이지 이동
+_top : 모바일에서 최상위 탭으로 이동
+_new : 모바일에서 신규탭으로 이동
+-->
+<br>
+<a href="http://google.com" target="_self">구글</a><br> <!-- 현재 페이지에서 링크연결 . self는 기본-->
+<a href="http://daum.net" target="_blank">다음</a><br> <!-- 새탭에서 열림 . 탭 열릴때마다 트래픽 1씩 증가?-->
+<a href="http://nate.com" target="_top">네이트</a><br> <!-- 무조건 최상위로 열림(모바일) -->
+<a href="http://nate.com" target="_new">네이트2</a><br> <!-- 새창?(모바일)  -->
+<!-- _top, _new -->
+
+</body>
+</html>

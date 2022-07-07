@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML1일차 HTML3.0 기본태그2</title>
+</head>
+<body>
+<!-- select :  사용자가 범위 안에 있는 내용을 선택할 때 사용하는 태그. 선택태그라고 함 
+부모:select
+자식:option
+-->
+<select>
+<option>SKT</option>
+<option>KT</option>
+<option>LGT</option>
+<option>알뜰폰</option>
+</select>
+<br><br><br>
+
+<!-- textarea : 사용자에게 한번에 많은정보를 보여주고 싶을때 사용하는 태그 ex)이용약관등 
+※절대로 text area 안에 주석 쓰면 안됨!!
+cols: 1줄당 몇자까지 보이는지 cols="50" -> 50자까지 보여줌
+rows: 한번에 textarea에서 보여지는 줄 수  -->
+<textarea cols="50" rows="10">
+12345678901234567890123456789012345678901234567890
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</textarea>
+<br><br><br><br>
+<!-- method : 전송하는 형태 -->
+<form method="post" action="http://www.naver.com">
+<input type="text">
+<br>
+<input type="checkbox">sms수신
+<br>
+<input type="password">
+<br>
+<input type="submit" value = 전송>
+<input type="button" value = 전송2 onclick="abc()">
+<input type="reset" value =취소>
+</form>
+<!-- form: 사용자가 입력한 데이터를 전송하기 위한 태그 
+※submit과 reset은 단독사용 불가. <form>과 함께 사용해야함. 
+submit : 사용자가 입력한 내용 전송. 클릭, enter 모두 사용 가능 
+reset : 사용자가 입력한 내용 초기화. (form태그 안에 위치해야함)
+같은 버튼 형태여도 button은 단독사용 가능. 단 button은 클릭해야만 작동 (버튼은 자바스크립트와 같이 사용하는경우가 많음) -->
+
+</body>
+</html>
+<!-- 버튼+자바스크립트 예시 -->
+<script>
+function abc(){
+	location.href="http://nate.com";
+}
+</script>

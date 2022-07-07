@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 1일차 Table(HTML2.0)</title>
+</head>
+<body>
+<!-- bgcolor : background color (배경색) , 어느위치에 들어가느냐에 따라 테이블의 색상이 달라짐
+ cellspacing : 바깥쪽 여백 cellpadding : 안쪽 여백 -->
+<table border="1" width = "450" height="120" bgcolor="pink" cellspacing ="0" cellpadding="0"> 
+<tr>
+<td width="100"><b>아이디</b></td>
+<td></td>
+<td width="100" rowspan="2" bgcolor="orange">
+<a href = "http://www.coupang.com" target="_blank">
+<img src = "./2.jpg" width = "100" height="60">
+</a>
+</td> <!-- td가 a보다 상위태그 -->
+</tr>
+<tr>
+<td><b>패스워드</b></td>
+<td></td>
+</tr>
+<tr bgcolor="gray">
+<td colspan="3" align="center">아이디 및 패스워드 찾기</td>
+</tr>
+<tr>
+<td colspan="2">아이디 및 패스워드 저장</td>
+<td align="right">회원가입</td>
+</tr>
+</table>
+</body>
+</html>
