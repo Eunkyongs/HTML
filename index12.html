@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 2일차 HTML4.0 (padding,margin)</title>
+<style>
+body {
+	margin: 0;
+	padding: 0
+}
+
+.box1 {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	/* margin-left:10px; margin-top:10px; margin-bottom:10px; */
+	margin: 10px;
+	float: left;
+}
+/* margin:12시, 3시, 6시, 9시 방향 margin:10px 일 경우는 모든 수치가 같을 경우 */
+/* margin-bottom: 자신의 기준으로 다른 오브젝트를 아래로 내림 */
+.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	float: left;
+}
+/* float: left (왼쪽), right(오른쪽), center(가운데) */
+.box3 {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	clear: both;
+}
+/* clear:both; float 때문에 사용하는 속성 값 입니다. 위치 초기화*/
+.ulcss {
+	list-style: none; /*디스크 모양 없애기*/
+	margin: 0px;
+	padding: 0px; /*디스크 모양만 없애면 디스크모양의 자리가 남아있기 때문에 여백도 없애줌.*/
+	float: right;
+	margin-right: 10px;
+}
+/*브라우저 화면 기준 오른쪽 왼쪽 잘 확인하면 margin으로 여백 만들수있음*/
+.licss {
+	width: 200px;
+	height: 30px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+}
+/*부모태그 ulcss를 일단 float:right;이용해 오른쪽으로 보내고, 
+역순으로 출력되면 안되니 자식태그 licss는 float:left;로 정렬
+float는 항상 부모태그 기준으로 움직임*/
+</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<br>
+	<ul class="ulcss">
+		<li class="licss">1</li>
+		<li class="licss">2</li>
+		<li class="licss">3</li>
+		<li class="licss">4</li>
+		<li class="licss">5</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>HTML2일차 Padding</title>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+}
+/*부모태그가 width가 없을 경우 자동적으로 100%적용됨(빈공간까지 모두 사용=작동되버리는 오류)
+부모태그에 자식태그 width크기만큼 적용시켜주면 좋음. float를 사용하지 않을경우 높이는 자동적으로 적용됨 */
+.olcss {
+	width: 150px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid red;
+}
+.licss {
+	width: 140px;
+	height: 30px;
+	border: 1px solid black;
+	/*text-align: center;*/
+	/*padding-left:10px;*/
+	padding:0px 0px 0px 10px;
+	}
+	/*hover: mouse over시 사용되는 css형태*/
+	.licss:hover{ 
+	background-color:orange;
+	}
+/*자식태그에서 float를 써버려서 부모태그에서 height,width값이 사라진 상태
+부모태그에 자식태그의 border값만큼 width, height값을 더 해줘야함*/
+.olcss2 {
+	width: 760px;
+	height: 32px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid red;
+}
+
+.licss2 {
+	width: 150px;
+	height: 30px;
+	border: 1px solid black;
+	text-align: center;
+	float: left;
+}
+/*border 사용시 border크기도 더해줘야함*/
+</style>
+</head>
+<body>
+	<ol class="olcss">
+		<li class="licss">1</li>
+		<li class="licss">2</li>
+		<li class="licss">3</li>
+		<li class="licss">4</li>
+		<li class="licss">5</li>
+	</ol>
+
+	<ol class="olcss2">
+		<li class="licss2">1</li>
+		<li class="licss2">2</li>
+		<li class="licss2">3</li>
+		<li class="licss2">4</li>
+		<li class="licss2">5</li>
+	</ol>
+
+</body>
+</html>
