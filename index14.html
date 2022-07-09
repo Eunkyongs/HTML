@@ -12,20 +12,26 @@ width:350px; height:115px;
 border:1px solid black; border-radius:10px;
 padding: 15px;
 }
-
 .ulcss{
 width:350px; height:115px; list-style:none; margin:0; padding:0;
-background-color:gray; 
+/*background-color:gray;*/
 }
-
 .email1{
-width:100px; height:35px; background-color:white; float:left;
+float:left;
+/*background-color:white; */
+}
+.a{
+padding-left:6px; padding-right:6px;
+ float:left;
+ /*background-color:white; */
 }
 .email2{
-width:250px; height:35px; background-color:white; float:left;
+
+ float:left; margin-bottom:5px;
+ /*background-color:white;*/
 }
 .pw{
-width:350px; height:35px; background-color:white; clear:both; 
+width:350px; height:35px; background-color:white; clear:both; margin-bottom:5px;
 }
 .btn{
 width:350px; height:35px; clear:both; background-color:white;
@@ -39,8 +45,9 @@ width:350px; height:35px; clear:both; background-color:white;
 <form>
 <div class="outline">
 <ul class="ulcss">
-<li class="email1"><input type="text"> </li>
-<li class="email2">@<input type="text"></li>
+<li class="email1"><input type="text" style="width:100px; height:35px; "> </li>
+<li class="a"> @</li>
+<li class="email2"><input type="text" style="width:220px; height:35px;"></li>
 <li class="pw"><input type="password" style="width:350px; height:35px;"></li>
 <li class="btn"><input type="submit" style="width:350px; height:35px; background-color:navy; color:white;" value="로 그 인"></li>
 </ul>
