@@ -1,0 +1,124 @@
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML 3일차 CSS2.0 응용 및 검색바 만들기</title>
+<style>
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	border-radius: 0 20px 0 0;
+}
+/*border-radius: 왼쪽상단 오른쪽상단 오른쪽하단 왼쪽하단; 모서리 둥글게. 값1개만쓰면 4방향 모두 같은값 적용됨*/
+.box2 {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border-radius: 50px 0 50px 50px;
+}
+
+.btn {
+	width: 200px;
+	height: 30px;
+	background-color: orange;
+	color: red;
+	border: 0;
+}
+
+.mid {
+	width: 200px;
+	height: 30px;
+	border: 0;
+	border-bottom: 1px solid black;
+}
+
+.search {
+	width: 586px;
+	height: 57px;
+	background-image: url("./search.png");
+	position: relative;
+}
+
+.s {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	border: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	outline: none;
+	text-indent: 5px;
+}
+.shop{
+width:330px; height:90px; border: 1px solid black;
+}
+.gm{
+width:110px; height:45px; background-image:url("./logo_quick_01.png");  border:0px; outline:none; float:left;
+}
+.au{
+width:110px; height:45px; background-image:url("./logo_quick_02.png"); border:0px;outline:none;float:left;
+}
+.harf{
+width:110px; height:45px; background-image:url("./logo_quick_03.png");  border:0px; outline:none;float:left;
+}
+.st{
+width:110px; height:45px; background-image:url("./logo_quick_04.png");  border:0px; outline:none;float:left;
+}
+.wema{
+width:110px; height:45px; background-image:url("./logo_quick_05.png"); border:0px; outline:none;float:left;
+}
+.coup{
+width:110px; height:45px; background-image:url("./logo_quick_06.png"); border:0px;  outline:none;float:left;
+}
+
+.quick_menu{ /*height:auto; →높이 자동으로 세팅*/
+width:360px; height:88px; list-style:none; margin:0; padding:0; border:1px solid black;
+}
+.menu_li{
+width:110px; float:left;
+}
+</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box2"></div>
+	<input type="button" value="회원가입" class="btn">
+	<input type="text" class="mid">
+	<br>
+	<br>
+	<form name="f" id="f" method="get"
+		action="https://search.naver.com/search.naver">
+		<div class="search">
+			<input type="text" name="query" class="s">
+		</div>
+	</form>
+	<br>
+	<div class="shop">
+	<div class="gm"></div>
+	<div class="au"> </div>
+	<div class="harf"></div>
+	<div class="st"></div>
+	<div class="wema"></div>
+	<div class="coup"></div>
+	</div>
+	
+	<br><br><!-- 선생님코드 -->
+	<ul class="quick_menu">
+	<li class="menu_li"><a href="https://www.gmarket.co.kr"><img src="./logo_quick_01.png"></a></li>
+	<li class="menu_li"><a href="https://www.auction.co.kr"><img src="./logo_quick_02.png"></a></li>
+	<li class="menu_li"><a href="http://www.halfclub.com><img src="./logo_quick_03.png"></a></li>
+	<li class="menu_li"><a href="https://www.11st.co.kr><img src="./logo_quick_04.png"></a></li>
+	<li class="menu_li"><a href="https://www.wemakeprice.com><img src="./logo_quick_05.png"></a></li>
+	<li class="menu_li"><a href="https://www.coupang.com><img src="./logo_quick_06.png"></a></li>
+	</ul>
+
+	
+</body>
+</html>

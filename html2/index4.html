@@ -1,0 +1,81 @@
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>HTML3일차 CSS2.0 응용(오브젝트 모양 만들기)</title>
+<style>
+/*http://mekeyace.kbsn.or.kr/test.pdf*/
+body {
+	margin: 0;
+	padding: 0;
+}
+.b1 { 	width: 320px; 	height: 240px; 	background-color: blue; 	position: relative; }
+
+.b2 { 	width: 160px; 	height: 240px; 	background-color: red; 	position: absolute; 	right: 0; }
+
+.b3 { 	width: 160px; 	height: 120px; 	background-color: green; 	position: absolute; 	bottom:0; }
+
+.b4 { 	width: 80px; 	height: 120px; 	background-color: yellowgreen; 	position:absolute; 	left:0; }
+
+.b5 { 	width: 80px;  	height: 60px; 	background-color: yellow; 	position:absolute; 	margin-left:80; 	bottom:0;}
+
+.b6 {	width: 50px; 	height: 60px; 	background-color: black;	position:absolute;	right:0;}
+
+.b7 {	width: 50px;	height: 40px;	background-color: purple;	position:absolute;	bottom:0;}
+
+.b8 {	width: 20px;	height: 40px;	background-color: grey;	position:absolute;	right:0;}
+
+.b9 {	width: 20px;	height: 20px;	background-color: pink;	position:absolute;	bottom:0;}
+
+/*선생님코드*/
+span{display:block;}
+.box1{width: 320px; height: 240px; background-color: blue; position: relative; }
+.box2{width: 160px; height: 240px; background-color: red; position: absolute; 	right: 0; }
+.box3{width: 80px; height: 120px; background-color: green; 	position: absolute;  right:0;	bottom:0;  padding-left:80px;}
+.box4{width: 80px; height: 60px; background-color: yellowgreen;padding-top:60px;}
+.box5{width:80px; height: 60px; background-color:yellow; position:relative;}
+.box6{width:50px; height: 60px; background-color:black; position:absolute; right:0;}
+.box7{width: 50px; height: 40px; background-color: purple;	position:relative;	margin-top:20px;}
+.box8{width: 20px; height: 40px; background-color: gray; position:absolute; top:20px; right:0;}
+.box9{width:20px; height:20px; background-color:pink; position:absolute; right:0; top:40px;}
+</style>
+</head>
+<body>
+
+	<div class="b1">
+		<div class="b2">
+			<div class="b3">
+				<div class="b4">
+				<div class="b5">
+					<div class="b6">
+						<div class="b7">
+							<div class="b8">
+								<div class="b9"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><!-- 선생님코드 -->
+	<div class="box1">
+	<span class="box2"></span>
+	<span class="box3">
+	<div class="box4">
+	<span class="box5">
+	<div class="box6">
+	<span class="box7"></span>
+	<span class="box8"></span>
+	<span class="box9"></span>
+	</div>
+	</span>
+	</div>
+	
+	</span>
+	</div>
+	
+
+
+</body>
+</html>
