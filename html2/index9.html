@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="ie=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML4일차 HTML5.0+CSS3.0(비디오태그)</title>
+</head>
+<body>
+<!-- 
+controls:비디오 기본 도구 틀을 사용함 
+muted:음소거로 실행
+autoplay: 자동재생
+loop: 반복실행
+poster: 썸네일 이미지 적용
+track: video 보조 역할을 하는 자막 태그
+
+※autoplay시 아이폰 또는 사파리, chrome에서는 muted가 없으면 autoplay가 안됨
+-->
+<video poster="./apink.jpg" controls muted><!--  autoplay loop-->
+	<source src="./videoplayback.mp4" type="video/mp4">
+	<track kind="subtitles" src="" srclang="en" label="English"><!-- 영어자막 -->
+	<track kind="subtitles" src="" srclang="ko" label="Korea"><!-- 한글자막 -->
+</video>
+</body>
+</html>

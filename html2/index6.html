@@ -46,7 +46,6 @@ ul, ol {
 	font-size: 12px;
 }
 /*최상단끝*/
-
 /*상단메뉴시작*/
 .menu {
 	width: 1185px;
@@ -60,7 +59,6 @@ ul, ol {
 	width: 240px;
 	height: 50px;
 	background-color: red;
-	margin: 0 0 0 15px;
 	float: left;
 }
 
@@ -77,11 +75,10 @@ ul, ol {
 .banner {
 	width: 700px;
 	height: 400px;
-	background-color: yellow;
+	background-color:#339933;
 	margin: 0 auto;
-	position: relative; 
-	
-	padding-left:500px;
+	position: relative;
+	padding-left: 500px;
 }
 
 .disc {
@@ -89,8 +86,8 @@ ul, ol {
 	height: 15px;
 	position: absolute;
 	margin: 0;
-	padding:0;
-	bottom:25px;
+	padding: 0;
+	bottom: 25px;
 }
 
 .licss {
@@ -100,14 +97,29 @@ ul, ol {
 	border-radius: 20px;
 	float: left;
 	margin: 0 5px 0 5px;
-	
 }
 
-.red {
+.licss:hover {
 	background-color: red;
 }
-
 /*배너 끝*/
+/*상품출력파트 시작*/
+.goods_list {
+	width: 1200px;
+	height: 800px;
+	background-color:#336633;
+	margin: 0 auto;
+}
+
+.goods {
+	width: 250px;
+	height: 300px;
+	background-color: #FFFF99;
+	float: left;
+	margin: 40px 0px 0px 40px;
+}
+
+/*상품출력파트 끝*/
 </style>
 </head>
 <body>
@@ -131,15 +143,24 @@ ul, ol {
 	<!-- 배너 파트 -->
 	<div class="banner">
 		<ol class="disc">
-		<li class="licss red "></li>
-		<li class="licss "></li>
-		<li class="licss "></li>
-		<li class="licss "></li>
-		<li class="licss"></li>
-	</ol>
+			<li class="licss red "></li>
+			<li class="licss "></li>
+			<li class="licss "></li>
+			<li class="licss "></li>
+			<li class="licss"></li>
+		</ol>
 	</div>
 	<!-- 상품 출력 파트 -->
-
+	<div class="goods_list">
+		<span class="goods"></span>
+		<span class="goods"></span>
+		<span class="goods"></span> 
+		<span class="goods"></span> 
+		<span class="goods"></span>
+		<span class="goods"></span> 
+		<span class="goods"></span> 
+		<span class="goods"></span>
+	</div>
 	<!-- 카피라이터 파트 -->
 </body>
 </html>
