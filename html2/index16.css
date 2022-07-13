@@ -1,0 +1,4 @@
+@charset "UTF-8";
+body{margin:0; padding:0;}
+span, label{display:block;}
+ul, ol{list-style:none;}
