@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>javascript 2일차 switch</title>
+<script>
+
+	var a=6;
+	var msg;
+	switch(a){ //선택문(숫자, 문자 구분만 정확하게 하면 됩니다.)
+	case 1:
+	case 6:	//멀티case 사용
+	 	msg="신용카드";	
+	break;	
+	
+	case 2:
+		msg="계좌이체";		
+	break;
+	
+	case 3:
+		msg="무통장 입금";
+	break;	
+	
+	default:
+		msg="결제취소";
+	break;	
+	}
+	console.log(msg);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

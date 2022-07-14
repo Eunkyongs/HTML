@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>javascript 2일차 외부 api js연결+배열(응용편)</title>
+<script src="http://192.168.100.206:8080/html2/js8.js?v=14"></script>
+<script src="http://192.168.100.207:8080/html2/js8.js?v=3"></script>
+<script>
+/*
+function aaa(){
+	var result = bbb();
+	console.log(result);
+}
+function bbb(){
+	var a=1;
+	var b=2;
+	return [a,b]; //리턴값 1개이상 전달할때 사용 (리턴값이 2개일땐 배열로 넘겨야함. 배열로 안넘기면 뒤에 있는 값만 리턴됨.)
+}
+aaa();
+*/
+
+var mid = "kim";
+var aa = result2(mid);
+console.log(aa);
+var bb = user(aa);
+console.log(bb);
+
+function point(aa){
+var data_b = [2500,3400,1000,6200];
+var points;
+for(var f=0; f<data_b.length; f++){
+	if(aa == f){
+		re= points[f];
+		}
+	}
+return [points,bb];
+}
+point(aa);
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

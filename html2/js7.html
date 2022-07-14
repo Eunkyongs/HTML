@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<head>
+<meta charset="UTF-8">
+<title>javascript 2일차 외부 api js 연결</title>
+<script src="http://192.168.100.208:8080/html2/js6.js"></script>
+<script src="http://192.168.100.206:8080/html2/js6.js"></script>
+<script>
+/*
+function gettera(set){
+	var result = set/3;
+	return result;
+}
+function getterb(set){
+	var result="홍길동님 최종 결제금액은"+set+"입니다.";
+	return result;
+}
+acall();
+bcall();
+*/
+//setter와 변수명 겹치면 충돌가능
+var data = [1,2,3,4,5]; // 숫자배열
+//console.log(data[0]); //배열[인덱스번호]
+var data2=["홍길동","이순신","강감찬"];//문자배열
+//console.log(data2[1]);
+
+var ea = data2.length;
+var w = 0;
+while(w<ea){
+	console.log(data2[w]);
+	w++;
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

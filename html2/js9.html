@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript 2일차 외부통신 (api) </title>
+<script src="http://192.168.100.206:8080/html2/js9.js?v=3"></script>
+<script src="http://192.168.100.207:8080/html2/js9.js?v=15"></script>
+<script>
+
+/*js9.html
+사용자 아이디와 패스워드를 전송
+
+A파트 js9.js (아이디 및 패스워드)
+['hong','park','kim','jang','lee']
+['ahong','bpark','kkim123','jang1234','lee0909']
+
+B파트 js9.js  (연락처 및 이메일)
+['Y','N','Y','Y','Y];
+['01012345678','01055994411','01035370132','01078015457','01031374882']
+['hong@naver.com','park@nate.com','kim_001@gmail.com','jang_go@gmail.com','lee09@naver.com'];
+
+* js9.html에서 아이디와 패스워드를 A파트에게 전달을 하며
+A파트 사용자는 아이디와 패스워드가 맞을 경우
+B파트 사용자에게 index값을 전달 합니다.
+B사용자는 index값을 받아서 연락처 및 이메일을 전달 하게 됩니다.
+단 B사용자는 회원탈퇴(N)일 경우 연락처와 이메일을 전달하지 않으며,
+탈퇴 회원이라고 A파트 사용자에게 전달 합니다.
+A파트 사용자는 B사용자에게 탈퇴회원 값을 받을 경우
+즉시, console에 탈퇴회원 입니다. 라고 메세지를 처리합니다.*/
+
+var ida = 'park';
+var pwa = 'bpark';
+var parta=yn(ida,pwa);
+console.log(parta);
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
