@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-compatible" content="ie=edge, chrome=1">
+<title>간편회원가입</title>
+<script>
+var name = [
+	{"person":"김수빈","email":"kim@nate.com"},
+	{"person":"김정민","email":"jungmin@gmail.com"},
+	{"person":"오유나","email":"ouna123@gmail.com"},
+	{"person":"김진수","email":"kimjsu@nate.com"},
+	{"person":"김창순","email":"soon0707@naver.com"},
+	{"person":"이유림","email":"limlee@gmail.com"},
+	{"person":"하윤성","email":"hayounsong@naver.com"},
+];
+
+
+function nameck(a){
+	var w = 0;
+	var zz= 0;
+	
+	while(w<name.length){
+		if(a==name[w]["person"]){
+		console.log("고객명:"+name[w]["person"]+", 이메일:"+name[w]["email"]);
+			zz=1;
+		}
+		w++;
+	}
+	if(zz!=1){
+		console.log("해당 사용자는 검색대상에 없습니다.")			
+	}
+
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

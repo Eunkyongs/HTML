@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="ie=edge, chrome=1">
+<title>Javascript 3일차 HTML+Javascript (input사용방식)</title>
+<script>
+//function (일반함수,리턴함수,(이벤트)핸들링함수)
+function abc(){ //이벤트 핸들링함수- html에 oneclick으로 설정?
+	/* 핸들링함수 : document.getElementById
+	var id = document.getElementById("mid"); //html의 id값을 가져와서 js변수로 이관함
+	console.log(id.value); //해당 id값을 가져오는 역할. 콘솔에 html의 id에 입력된 값을 출력
+	id.readOnly=true; //id를 읽기전용으로 전환(ex.id중복체크)
+	*/
+	/* 이런식으로 입력할수도 있음(별로 추천안함. id호출을 많이하게됨)
+	var id = document.getElementById("mid").value; 
+	document.getElementById("mid").id.readOnly=true;
+	*/
+	
+	var id = document.getElementById("mid");
+	var pw= document.getElementById("mpass");
+	if(id.value==""){ // 해당 id값이 비어있을 때
+		alert("아이디를 입력하세요"); //alert:경고문구
+		id.focus(); // focus() 커서를 해당 오브젝트에 적용할 때 사용
+	}else if(pw.value==""){
+		alert("패스워드를 입력하세요");
+		pw.focus();
+	}else{
+		/*form id 사용시*/
+		//var f=document.getElementByid("frm");
+		//f.submit();
+
+		/*form name 사용시*/
+		frm.submit(); // submit() : method+action 발동시키는 함수
+	}
+	
+	
+}
+
+
+</script>
+</head>
+<body>
+<form id="frm" name="frm" method="post" action="http://naver.com"> <!-- form의 name, id는 백엔드와 관련없 -->
+<input type="text" id="mid" name="mid"> <!-- id값은 중복되면 제일 아래라인의 id값만 js로 전송됨!! -->
+<br><input type="password" id="mpass" name="mpass">
+<input type="button" value="확인" onclick="abc();">
+</form>
+<!-- 
+onclick속성 (button)
+onclick 사용안하는 속성 (submit, reset)
+-->
+</body>
+</html>

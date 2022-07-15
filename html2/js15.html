@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+<title>Javascript 3일차 데이터값 응용 1</title>
+<script src="http://192.168.100.206:8080/html2/"></script>
+<script src="http://192.168.100.207:8080/html2/"></script>
+<script>
+//CORS 발생 : 서로 다른 도메인 및 IP가 발생 할 경우
+//cross-site, cross-domain 서버없이 해결법
+function abc(){
+	//window.opener.reload(); //부모창 새로고침(이방법은 잘 사용하지 않음)
+	//opener.location.reload(); //부모창 새로고침 
+	//var z = opener.document.mid;
+	/*부모 창에 있는 값을 자식창으로 가져오는 사항(id로 이용)*/
+	var z = opener.document.getElementById("mid").value;
+	alert(z);
+	
+	
+	
+}
+</script>
+</head>
+<body>
+<input type="button" value="데이터" onclick="abc();">
+</body>
+</html>
