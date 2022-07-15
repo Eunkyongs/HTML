@@ -1,43 +1,81 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<meta name = "viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-compatible" content="ie=edge, chrome=1">
-<title>간편회원가입</title>
-<script>
-var name = [
-	{"person":"김수빈","email":"kim@nate.com"},
-	{"person":"김정민","email":"jungmin@gmail.com"},
-	{"person":"오유나","email":"ouna123@gmail.com"},
-	{"person":"김진수","email":"kimjsu@nate.com"},
-	{"person":"김창순","email":"soon0707@naver.com"},
-	{"person":"이유림","email":"limlee@gmail.com"},
-	{"person":"하윤성","email":"hayounsong@naver.com"},
-];
+<html lang = "ko">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<!-- 	<meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+	<title> javascript 3일차 간편 회원 가입 </title>
+	</head>
+	<script src="http://192.168.100.207:8080/html2/js16_id.js?v=20220715021"></script>
+	<script src="http://192.168.100.208:8080/html2/js16_name.js?v=20220715021"></script>
+	<script> 
 
-
-function nameck(a){
-	var w = 0;
-	var zz= 0;
-	
-	while(w<name.length){
-		if(a==name[w]["person"]){
-		console.log("고객명:"+name[w]["person"]+", 이메일:"+name[w]["email"]);
-			zz=1;
+		function search_btn(){
+			var search1 = document.getElementById("search_bar");
+			var search2 = document.getElementById("se").value;
+			if(search1,search2 == ""){
+ 				alert("이름 및 아이디를 선택해주세요");
+ 				search1.focus();
+				}
+			else if(search2 == "select_name"){
+				nameck(search1.value);
+			}
+			else if (search2 == "select_id"){
+				idck(search1.value);
+			}
 		}
-		w++;
-	}
-	if(zz!=1){
-		console.log("해당 사용자는 검색대상에 없습니다.")			
-	}
+		
 
-}
-
-
-</script>
-</head>
-<body>
-
-</body>
+	
+	
+	</script>
+	<style>
+		/*	Base code	*/
+		body{
+			margin : 0;
+			padding : 0;
+			background-color: none;
+		}
+		
+		a{
+			text-decoration-line : none;
+		}
+		
+		span,label{
+			display : block;
+		}
+		
+		ul,ol{
+			list-style: none;
+			margin : 0;
+			padding : 0;
+		}
+		
+		.selectcss{
+			text-align: center;
+		}
+		
+		.btn{
+			background-color: skyblue;
+			color : white;
+			border : none;
+			border : 1px solid black;
+		}
+		
+		.searchbar{
+			border : none;
+			border-bottom: 1px solid black;
+			
+		}
+				
+	</style>
+	<body>
+		<select name ="se" id="se" class="selectcss" >
+			<option value="">[검색할 파트]</option>
+			<option value="select_name">이름</option>
+			<option value="select_id">아이디</option>
+		</select>
+			<input type="text" class="searchbar" name="search_bar" id="search_bar" placeholder = "이름 및 아이디 입력">
+			<input type="button" class="btn" value="고객검색" onclick="search_btn();">
+	</body>
 </html>
